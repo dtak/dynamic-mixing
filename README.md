@@ -15,7 +15,7 @@ Alternatively, you can set these parameters by executing
 
 *python run.py --dataset d --out_dir o* from the command line.
 
-This will produce a list of policies for the data set.
+This will produce a list of optimal policies for the data set.
 
 Please reach out to sonali.parbhoo@unibas.ch for any bug reports or concerns.
 
