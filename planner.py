@@ -106,7 +106,7 @@ def run_mixed_planner(lbeliefs, ltrans, test_dt, test_fcpt, quantiles, kernel_ob
     optimal_action_list = []
     policy = np.zeros((lbeliefs.shape[0], num_actions))
 
-    for idx in xrange(12): # should be lbeliefs.shape[0]
+    for idx in xrange(lbeliefs.shape[0]): # should be lbeliefs.shape[0]
         curr_lbelief = lbeliefs[idx, :]
         val_set = np.zeros((num_actions))
 
@@ -116,6 +116,4 @@ def run_mixed_planner(lbeliefs, ltrans, test_dt, test_fcpt, quantiles, kernel_ob
 
         optimal_action_list.append(np.argmax(val_set))
 
-    print(optimal_action_list[0:12])
-
-    return None, optimal_action_list
+    return optimal_action_list
