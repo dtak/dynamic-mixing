@@ -18,28 +18,6 @@ def neural_net(x, weights, biases):
     return out_layer
 
 
-# def compare_predictions(ypred, targets):
-#     count = 0
-#     for k in range(ypred.shape[0]):
-#         curr_pred = ypred[k,:].astype(int)
-#         curr_target = targets[k,:].astype(int)
-#         if ((curr_pred == curr_target)).all():
-#             count += 1
-#     print(count)
-
-# def compare_obs_mean(ypred, targets):
-#     #find all the indices where obs_mean >0
-#     #find all the indices in ypred where obs_mean >0
-#     #compare the indices to see how many match
-
-#     target_inds = np.where(targets[:,0] < 0)[0]
-#     ypred_inds = np.where(ypred[:,0] < 0)[0]
-#     print(target_inds)
-#     print(ypred_inds)
-#     print("Total true negative", len(target_inds))
-#     print("Total pred negative", len(ypred_inds))
-#     print(np.where(ypred_inds == target_inds))
-
 def predict(nn, inputs, x, init, model_path):
 
     saver = tf.train.Saver()
