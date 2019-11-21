@@ -1,5 +1,6 @@
 Kernelised Dynamic Mixing
 =========================
+Parbhoo, Gottesman et al 2018
 
 A collection of methods for dynamically switching between kernel and model-based planning. Included in the 'toy' folder:
   - a script to create a toy data set of a certain size
@@ -17,7 +18,7 @@ Alternatively, you can set these parameters by executing
 
 This will produce a list of optimal policies for the data set.
 
-Please reach out to sonali.parbhoo@unibas.ch for any bug reports or concerns.
+Please reach out to sonali.parbhoo@unibas.ch for any bug reports or concerns. Original Paper at https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0205839
 
 
 
